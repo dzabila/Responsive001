@@ -1,0 +1,216 @@
+
+/* აქ ჰედერიდან დაწყებული პირველი სექციის ჩათვლით გაწერილი ტეგებია  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition-property:all;
+    transition-duration: 1s;
+}
+.header {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    transition-property:all;
+    transition-duration: 1s;
+}
+nav {
+    margin-left: 115px;
+    transition-property:all;
+    transition-duration: 1s;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+    height: 20px;
+    margin-top: 45px;
+    transition-property:all;
+    transition-duration: 1s;
+}
+.nav__list a {
+    color: black;
+    transition-property:all;
+    transition-duration: 1s;
+}
+#button {
+    width: 78px;
+    height: 40px;
+    background-color: #F84646;
+    color: white;
+    border: none;
+    margin-top: 35px;
+    border-radius: 5px;
+    transition-property:all;
+    transition-duration: 1s;
+}
+
+.section__one {
+    background-image: url(../img/Rectangle\ 1.jpg);
+    width: 100%;
+    height: 756px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition-property:all;
+    transition-duration: 1s;
+}
+.section__one--wraper {
+    max-width: 1440px;
+    width: 100%;
+    height: 756px;
+    transition-property:all;
+    transition-duration: 1s;
+}
+h1 {
+    position: absolute;
+    top: 200px;
+    left: 122px;
+    font-size: 64px;
+    line-height: 82px;
+    font-weight: 800;
+    transition-property:all;
+    transition-duration: 1s;
+
+}
+.section__one--descr {
+    color: black;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    position: absolute;
+    top: 384px;
+    left: 122px;
+    max-width: 650px;
+    width: 100%;
+    transition-property:all;
+    transition-duration: 1s;
+}
+
+/* section two */
+
+.section__two {
+    max-width: 1153px;
+    width: 100%;
+    margin: 0 auto;
+    height: 802px;
+    margin-top: 120px;
+    transition: all;
+    transition-duration: 1s;
+}
+.section__two h2 {
+    color: black;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49.18px;
+    text-align: center;
+}
+.h2__descr {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39.5px;
+    max-width: 994px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.section__two--container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    max-width: 1153px;
+    width: 100%;
+    height: 508px;
+    flex-wrap: wrap;
+    margin-top: 99px;
+}
+.container__box {
+    width: 298px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 91px;
+}
+.container__box h3 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49.18px;
+    color: black;
+}
+.container__box p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+.container__box img {
+    width: 76px;
+    height: 76px;
+}
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+    nav {
+        margin-left: 103px;
+    }
+    h1 {
+        font-size: 56px;
+        line-height: 73.5px;
+        /* left: 50%;
+        transform: translateX(-50%); */
+    }
+    #button {
+        margin-right: 53px;
+    }
+    .section__one--descr {
+        max-width: 565px;
+        width: 100%;
+        /* left: 50%;
+        transform: translateX(-50%); */
+    }
+    .section__two {
+        max-width: 764px;
+        width: 80%;
+    }
+    .section__two p {
+        max-width: 334px;
+        width: 100%;
+    }
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+    .nav__list  li{
+        margin-left: 10px;
+    }
+    .header {
+        justify-content: flex-end;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 57.5px;
+    }
+    #button {
+        margin-right: 35px;
+    }
+    nav {
+        display: none;
+    }
+    .section__one--descr {
+        max-width: 335px;
+        width: 50%;
+    }
+    .section__one {
+        width: 100%;
+        max-width: 1440px;
+    }
+    .section__two {
+        max-width: 335px;
+        width: 100%;
+    }
+}
+
