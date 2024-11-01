@@ -269,6 +269,9 @@ h1 {
         width: 80%;
         margin-bottom: 174px;
         height: 1149.72px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .section__two p {
         max-width: 852px;
@@ -339,6 +342,9 @@ h1 {
         width: 100%;
         max-height: 2010px;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
     .section__two p {
@@ -348,12 +354,14 @@ h1 {
         font-size: 12px;
         line-height: 22px;
         text-align: center;
+        
     }
     .section__two--container {
         max-width: 335px;
         width: 100%;
         max-height: 1797px;
         height: 100%;
+        margin: 0 autp;
         margin-top: 40px;
     }
     .section__three {
